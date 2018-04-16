@@ -13,7 +13,7 @@ module.exports = class Router extends React.Component {
     window.addEventListener('hashchange', this.updateHash, false);
   }
   componentWillUnmount() {
-    window.removeEventListener('ashchange', this.updateHash, false);
+    window.removeEventListener('hashchange', this.updateHash, false);
   }
   render() {
     if (this.props.mapping[this.state.hash])
